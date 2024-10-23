@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const ButtonContainer = styled.button`
+const ButtonContainer = styled.button`
     width: 100%;
     height: 42px;
     background-color: #81259D;
@@ -14,4 +14,14 @@ export const ButtonContainer = styled.button`
         opacity: 0.6;
         cursor:pointer;
     }
-`
+
+    &:disabled {
+        background-color: #ccc; 
+        color: #666; 
+        border: 1px solid #ccc;
+        cursor: not-allowed; 
+        opacity: 0.7;
+    }
+`;
+
+export default ButtonContainer;
